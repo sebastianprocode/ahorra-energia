@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ahorro de Energia</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Ahorro de Energia en mi Hogar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="equipos.html">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="mi-factura.html">Mi Factura</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="encuesta.html">Encuesta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1 style="font-size: 50px;">Análisis de Factura</h1>
+                             <span class="subheading">Historial de consumo, comparación y recomendaciones de ahorro.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <section class="mb-5">
+                            <h2>Factura de Energía de mi Hogar</h2>
+                            <p class="text-muted">A continuación se muestra la factura del último periodo con los datos sensibles protegidos (nombre, dirección y número de cuenta ocultos).</p>
+                            
+                            <div class="row align-items-center mt-4">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <figure class="text-center border p-3 rounded">
+                                        <img class="img-fluid rounded" src="assets/img/Factura.jpeg " alt="Foto de la factura de energía eléctrica con datos personales tachados" style="max-height: 380px; object-fit: contain;">
+                                        <figcaption class="text-muted small mt-2">Factura de energía del ultimo mes.</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-primary mb-3">
+                                        <div class="card-header bg-primary text-white font-weight-bold">Datos del Último Mes Facturado</div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    Valor del kWh:
+                                                    <span class="badge bg-secondary rounded-pill">$950 COP</span>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    Consumo del mes:
+                                                    <span class="badge bg-primary rounded-pill">120 kWh</span>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    Total a pagar energía:
+                                                    <span class="badge bg-success rounded-pill">$114.000 COP</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <hr class="my-4" />
+
+                        <section class="mb-5">
+                            <h2>Historial de Consumo Reciente</h2>
+                            <p>Registro histórico extraído de la factura de los últimos 6 meses de servicio:</p>
+                            
+                            <table class="table table-striped table-bordered mt-3">
+                                <caption>Historial de consumo de energía de los últimos meses</caption>
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Mes</th>
+                                        <th>Consumo (kWh)</th>
+                                        <th>Valor Pagado (COP)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mayo 2026</td>
+                                        <td>110</td>
+                                        <td>$104.500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Junio 2026</td>
+                                        <td>115</td>
+                                        <td>$109.250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Julio 2026</td>
+                                        <td>125</td>
+                                        <td>$118.750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Agosto 2026</td>
+                                        <td>118</td>
+                                        <td>$112.100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Septiembre 2026</td>
+                                        <td>122</td>
+                                        <td>$115.900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Octubre 2026</td>
+                                        <td>120</td>
+                                        <td>$114.000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Promedio Mensual</th>
+                                        <td>118,3 kWh</td>
+                                        <td>$112.416 COP</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </section>
+
+                        <hr class="my-4" />
+
+                        <section class="mb-5">
+                            <h2>Comparación: Proyección vs. Factura Real</h2>
+                            
+                            <div class="row text-center mb-4">
+                                <div class="col-md-6 mb-3">
+                                    <div class="p-3 border rounded bg-light">
+                                        <h4 class="text-secondary">Proyección Mensual (4 Equipos)</h4>
+                                        <p class="display-6 fw-bold text-dark">26,88 kWh</p>
+                                        <small class="text-muted">(Calculado a 4,3 semanas a partir de los 6,27 kWh/semana de la tabla de equipos)</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="p-3 border rounded bg-light">
+                                        <h4 class="text-secondary">Factura Real del Mes</h4>
+                                        <p class="display-6 fw-bold text-primary">120,00 kWh</p>
+                                        <small class="text-muted">(Lectura medida del medidor registrada en el recibo de luz)</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-body bg-light">
+                                <h4 class="card-title">¿A qué se debe la diferencia?</h4>
+                                <p>La diferencia de <strong>93,12 kWh</strong> entre la proyección estimada y el consumo total reflejado en la factura real se explica por los siguientes factores de consumo en el hogar:</p>
+                                <ul>
+                                    <li><strong>Equipos no medidos en la tabla:</strong> En la inventariación de <code>equipos.html</code> solo se registraron 4 electrodomésticos (TV, Nevera, Lavadora y Calentador). No se incluyeron la iluminación general del hogar (bombillos LED/incandescentes), cargadores de celulares/laptops, plancha de ropa, licuadora o extractor.</li>
+                                    <li><strong>Consumo en modo Stand-by (Vampiro):</strong> Dispositivos como el televisor y la lavadora continúan consumiendo pequeñas fracciones de energía al permanecer permanentemente enchufados a la red eléctrica.</li>
+                                    <li><strong>Uso variable de la Nevera:</strong> El motor del compresor de la nevera trabaja con mayor intensidad o frecuencia en días calurosos o cuando la puerta se abre de forma recurrente durante el día por varios integrantes de la familia.</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <hr class="my-4" />
+
+                        <section class="mb-5">
+                            <h2>Recomendaciones de Ahorro para mi Familia</h2>
+                            <p>Con base en los datos de consumo analizados de nuestros electrodomésticos y de la factura, estas son tres medidas clave para reducir la planilla de energía:</p>
+
+                            <div class="list-group">
+                                <div class="list-group-item list-group-item-action flex-column align-items-start p-3">
+                                    <div class="d-flex w-100 justify-content-between align-items-center mb-2">
+                                        <h5 class="mb-1 text-success"><i class="fas fa-snowflake me-2"></i>1. Optimizar el uso de la Nevera (Principal consumidor eléctrico)</h5>
+                                        <span class="badge bg-success">Mayor impacto</span>
+                                    </div>
+                                    <p class="mb-1">Dado que la nevera representa casi el 50% del consumo medido en los equipos (2,98 kWh/semana), se debe evitar abrir la puerta innecesariamente o dejarla abierta por periodos prolongados. Asimismo, es clave revisar los empaques de caucho para asegurar un sellado hermético y evitar guardar alimentos calientes.</p>
+                                </div>
+
+                                <div class="list-group-item list-group-item-action flex-column align-items-start p-3 mt-3 border-top">
+                                    <div class="d-flex w-100 justify-content-between align-items-center mb-2">
+                                        <h5 class="mb-1 text-primary"><i class="fas fa-soap me-2"></i>2. Lavar con cargas completas y agua fría</h5>
+                                        <span class="badge bg-primary">Ahorro en lavadora</span>
+                                    </div>
+                                    <p class="mb-1">La lavadora requiere 857 W por ciclo. Para maximizar la eficiencia energética, se debe utilizar siempre a la máxima capacidad de carga permitida (15 kg) para reducir el número de ciclos semanales y programar ciclos cortos en agua fría.</p>
+                                </div>
+
+                                <div class="list-group-item list-group-item-action flex-column align-items-start p-3 mt-3 border-top">
+                                    <div class="d-flex w-100 justify-content-between align-items-center mb-2">
+                                        <h5 class="mb-1 text-warning text-dark"><i class="fas fa-plug me-2"></i>3. Desconectar el Tv y cargadores (Eliminar consumo fantasma)</h5>
+                                        <span class="badge bg-warning text-dark">Ahorro pasivo</span>
+                                    </div>
+                                    <p class="mb-1">El televisor de 75 W y los cargadores consumen energía de forma continua cuando quedan conectados a los tomacorrientes sin usarse. Conectarlos a multitomas con interruptor para apagarlos por completo al finalizar el día o al salir de casa reduce el consumo residual.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://x.com/picazomario/status/2112486003457802535">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/GestionUNGRD/posts/ante-el-fenómeno-de-el-niño-2026-2027-conocer-el-riesgo-y-contar-con-información/1519161680240134/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/sebastianprocode/ahorra-energia.git">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

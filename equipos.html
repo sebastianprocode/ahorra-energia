@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ahorro de Energia</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Ahorro de Energia en mi Hogar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="equipos.html">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="mi-factura.html">Mi Factura</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="encuesta.html">Encuesta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/about-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1 style="font-size: 50px;"">Consumo de energía en mi Hogar</h1>
+                            <span class="subheading">Consumo semanal de mis equipos en mi Hogar.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5" >
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-12 col-lg-10 col-xl-10">
+                        <section>
+                            <h2>Consumo por equipo</h2>
+                            <!-- table table-striped table-bordered: filas de colores alternos y bordes -->
+                            <table class="table table-striped table-bordered" style="margin-top: 20px;">
+                                <caption>Consumo semanal de los equipos</caption>
+                                <thead>
+                                    <tr>
+                                        <!-- rowspan="2": la celda ocupa 2 FILAS hacia abajo -->
+                                        <th rowspan="2">Equipo</th>
+                                        <th rowspan="2">Potencia (W)</th>
+                                        <!-- colspan="2": la celda ocupa 2 COLUMNAS hacia la derecha -->
+                                        <th colspan="2">Horas de uso por día</th>
+                                        <th rowspan="2">kWh en la semana</th>
+                                        <th rowspan="2">Costo en la semana (COP)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Lunes a viernes</th>
+                                        <th>Sábado y domingo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Televisor</td>
+                                        <td>75</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1,58</td>
+                                        <td>1.496</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nevera</td>
+                                        <td>18</td>
+                                        <td>24</td>
+                                        <td>24</td>
+                                        <td>2,98</td>
+                                        <td>2.833</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lavadora</td>
+                                        <td>857</td>
+                                        <td>0,2 (1h/sem)</td>
+                                        <td>0,5 (1h/sem)</td>
+                                        <td>1,71</td>
+                                        <td>1.629</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Calentador a gas</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>0,00</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                                <!-- tfoot: la fila de TOTALES al final de la tabla -->
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="4">Total de la semana</th>
+                                        <td>6,27</td>
+                                        <td>5.958</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </section>
+
+                        <hr class="my-4" />
+
+                        <section>
+                            <h2>¿Qué equipo gasta más?</h2>
+                            <p>La <strong>nevera</strong>: al estar encendida las 24 horas del día, representa casi la <em>mitad</em> del consumo energético eléctrico de la semana.</p>
+                            <!-- figure + figcaption: una imagen con su PIE DE FOTO -->
+                            <figure>
+                                <div class="d-flex justify-content-center">
+                                    <img style="width: 530px; height: 280px; margin-top: 10px;" src="assets/img/precio_bolsa_2026.png" alt="">
+                                </div>
+                                <figcaption>Cada kWh de la tarifa eléctrica se cobra según el costo regulado del periodo.</figcaption>
+                            </figure>
+                        </section>
+
+                        <hr class="my-4" />
+
+                        <section>
+                            <h2 class="mb-4">Etiquetas de consumo energético de los equipos</h2>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <figure class="text-center h-100 border p-3 rounded">
+                                        <img class="img-fluid rounded mb-2" style="max-height: 250px; object-fit: contain;" src="assets/img/TV_Sala.jpg" alt="Etiqueta de especificaciones técnicas del televisor Hyundai indicando consumo de 75 vatios">
+                                        <figcaption class="text-muted small">Etiqueta de especificaciones del Televisor LED Hyundai (75W)</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6">
+                                    <figure class="text-center h-100 border p-3 rounded">
+                                        <img class="img-fluid rounded mb-2" style="max-height: 250px; object-fit: contain;" src="assets/img/Nevera.jpg" alt="Etiqueta de especificaciones y consumo diario de la nevera Challenger de 0,426 kWh cada 24 horas">
+                                        <figcaption class="text-muted small">Etiqueta técnica de la Nevera Challenger (0.426 kWh/24h)</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6">
+                                    <figure class="text-center h-100 border p-3 rounded">
+                                        <img class="img-fluid rounded mb-2" style="max-height: 250px; object-fit: contain;" src="assets/img/Lavadora.jpg" alt="Etiqueta de eficiencia energética RETIQ de la lavadora automática Samsung clase A">
+                                        <figcaption class="text-muted small">Etiqueta de eficiencia energética de la Lavadora Samsung (Clase A)</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6">
+                                    <figure class="text-center h-100 border p-3 rounded">
+                                        <img class="img-fluid rounded mb-2" style="max-height: 250px; object-fit: contain;" src="assets/img/Calentador_Agua.jpg" alt="Etiqueta de eficiencia energética RETIQ del calentador de agua a gas Haceb clase A">
+                                        <figcaption class="text-muted small">Etiqueta de eficiencia energética del Calentador a Gas Haceb (Clase A)</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://x.com/picazomario/status/2112486003457802535">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/GestionUNGRD/posts/ante-el-fenómeno-de-el-niño-2026-2027-conocer-el-riesgo-y-contar-con-información/1519161680240134/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/sebastianprocode/ahorra-energia.git">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
